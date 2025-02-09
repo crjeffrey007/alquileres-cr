@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Clonar el repositorio
+        uses: actions/checkout@v2
+
+      - name: 🔑 Crear archivo .env con API Key
+        run: echo "BREVO_API_KEY=${{ secrets.BREVO_API_KEY }}" > .env
+
+      - name: 📦 Instalar dependencias
+        run: npm install
+
+      - name: 🚀 Construir y desplegar
+        run: npm run build && npm run deploy
