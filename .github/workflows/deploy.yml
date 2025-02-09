@@ -1,21 +1,24 @@
-name: Deploy to GitHub Pages
+name: Deploy JavaScript
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 📥 Clonar el repositorio
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: 🔑 Crear archivo .env con API Key
-        run: echo "BREVO_API_KEY=${{ secrets.BREVO_API_KEY }}" > .env
+      - name: Reemplazar API Key en JavaScript
+        run: |
+          sed -i "s|process.env.BREVO_API_KEY|${{ secrets.BREVO_API_KEY }}|g" public/js/script.js
 
-      - name: 📦 Instalar dependencias
-        run: npm install
-
-      - name: 🚀 Construir y desplegar
-        run: npm run build && npm run deploy
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
