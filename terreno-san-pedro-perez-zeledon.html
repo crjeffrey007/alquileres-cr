@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+.carousel {
+    background: #FFF;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 400px;
+    background-size: contain; /* Ajusta la imagen dentro sin recortar */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que se repita */
+    border-radius: 10px;
+    background-color: #fff; /* Fondo sólido para evitar transparencias */
+}
+    </style>
+</head>
+<body>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": 3000}'>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249936/4107147e-ad0e-43b2-b777-49a8059c2d88_bfp8uj.jpg');"></div>        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249939/f93b6275-5856-46b2-811a-1be6f26162cc_vnq1vc.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249936/b9b207ef-d8a1-4c43-92bc-3b02f1a109f2_idhfny.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249938/c678c871-bff7-4f57-8ac6-1a6533acb6fc_gd1fqm.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249938/ee5bcc3b-0070-4c02-aac2-4588107a6bfc_ts6yip.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249939/f93b6275-5856-46b2-811a-1be6f26162cc_vnq1vc.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249936/ad87672f-b4f6-41a4-9c47-871480ff32f9_hepqzk.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249935/9214be7f-3241-4973-a876-1024a2ee0652_ci2zbc.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249935/19334ce9-d7af-4892-b6af-8725598cd2db_uqvgb5.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1739249934/3372c35a-6d01-422a-a584-1dd88874f1a5_t3ijir.jpg');"></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
