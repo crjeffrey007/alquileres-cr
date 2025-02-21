@@ -282,3 +282,13 @@
       padding: 15px;
     }
   }
+
+#order-form { max-width: 600px; margin: 20px auto; padding: 20px; background: #f9f9f9; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  #order-form h2 { text-align: center; }
+  label { font-weight: bold; display: block; margin-top: 10px; }
+  input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+  button { width: 100%; background: red; color: white; border: none; padding: 10px; margin-top: 15px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+  button:hover { background: black; }
+  #order-summary { margin-top: 20px; padding: 10px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  #order-summary ul { list-style: none; padding: 0; }
+  #order-summary li { padding: 5px 0; border-bottom: 1px solid #ddd; }
