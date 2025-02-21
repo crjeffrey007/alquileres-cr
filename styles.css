@@ -187,3 +187,98 @@
       height: auto;
     }
   }
+
+#my-form {
+    color: #0f3b77;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; /* Adjust for smaller screens */
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the form */
+    font-family: Arial, sans-serif;
+  }
+
+  #my-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0f3b77;
+    font-weight: bold;
+  }
+
+  #my-form input, #my-form textarea {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #0f3b77;
+    font-size: 16px;
+  }
+
+  #my-form textarea {
+    height: 100px;
+  }
+
+  #my-form-button {
+    background-color: #0f3b77;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  #my-form-button:hover {
+    background-color: #010101;
+  }
+
+  #my-form-status {
+    margin-top: 10px;
+    color: #0f3b77;
+    text-align: center;
+  }
+
+  /* Captcha */
+  .g-recaptcha {
+    margin-bottom: 20px;
+  }
+
+  /* Contact Email */
+  .contact-email {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .contact-email a {
+    text-decoration: none;
+    color: #0f3b77;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-email img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .contact-email a:hover {
+    text-decoration: underline;
+    color: #010101;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #my-form {
+      width: 100%;
+      padding: 15px;
+    }
+  }
