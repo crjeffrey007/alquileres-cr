@@ -292,3 +292,33 @@
   #order-summary { margin-top: 20px; padding: 10px; background: #fff; border-radius: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
   #order-summary ul { list-style: none; padding: 0; }
   #order-summary li { padding: 5px 0; border-bottom: 1px solid #ddd; }
+
+#contact-form { max-width: 600px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  #contact-form label { font-weight: bold; display: block; margin-top: 10px; }
+  #contact-form input, #contact-form textarea, #contact-form select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+  }
+  #contact-form button { 
+    width: 100%; 
+    background: blue; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    margin-top: 15px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border-radius: 5px; 
+  }
+  #contact-form button:hover { background: darkblue; }
+
+
+  /* Formulario */
+  #contact-form { max-width: 600px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  #contact-form label { font-weight: bold; display: block; margin-top: 10px; }
+  #contact-form input, #contact-form textarea, #contact-form select { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+  #contact-form button { width: 100%; background: blue; color: white; border: none; padding: 10px; margin-top: 15px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+  #contact-form button:hover { background: darkblue; }
