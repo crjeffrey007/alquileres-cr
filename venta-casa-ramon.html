@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style>
+.carousel {
+    background: #FFF;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: 400px;
+    background-size: contain; /* Ajusta la imagen dentro sin recortar */
+    background-position: center;
+    background-repeat: no-repeat; /* Evita que se repita */
+    border-radius: 10px;
+    background-color: #fff; /* Fondo sólido para evitar transparencias */
+}
+    </style>
+</head>
+<body>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": 3000}'>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842376/a427ab01-c298-47c8-9817-efc93464f69c_rml17v.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/47273506-b4e0-4e02-98de-fe0ca70740fc_kr6zof.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/8991b5f0-ff3e-4fa3-a635-66916f1ab6ed_gkmiul.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/aa3d7389-3543-4e2d-af10-77d3db058a93_kq7aps.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842376/e52e6b63-457a-4863-87d3-4b2b4163a74b_hkhe9c.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/7833599d-cbb2-4e1c-8f8e-b81ef0d762de_xt0pys.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/3c4ce568-6378-4d32-801c-59835a7097f7_zapnkj.jpg');"></div>
+        <div class="carousel-cell" style="background-image: url('https://res.cloudinary.com/dvijtn6ti/image/upload/v1749842375/3c4ce568-6378-4d32-801c-59835a7097f7_zapnkj.jpg');"></div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
